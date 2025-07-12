@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Show all attached IPv4 IPs
+
+ifconfig -a | grep 'inet' | awk '{print $2}'
